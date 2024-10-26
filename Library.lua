@@ -126,6 +126,7 @@ function Library:Create(Class, Properties)
     end;
 
     for Property, Value in next, Properties do
+        
         _Instance[Property] = Value;
     end;
 
@@ -2699,6 +2700,7 @@ do
         BorderColor3 = Color3.new(0, 0, 0);
         Position = UDim2.new(0, 100, 0, -25);
         Size = UDim2.new(0, 213, 0, 20);
+        Name = "FeinWatermark";
         ZIndex = 200;
         Visible = false;
         Parent = ScreenGui;
